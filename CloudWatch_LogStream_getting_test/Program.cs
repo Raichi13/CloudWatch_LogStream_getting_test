@@ -33,10 +33,6 @@ namespace CloudWatch_LogStream_getting_test
                 {
                     //0は正の符号
                     var i = BigInteger.Parse("0" + logStreams[j].LogStreamName, NumberStyles.HexNumber);
-                    if (i < 0)
-                    {
-                        Console.WriteLine("boo!");
-                    }
                     if (firstLogStreamName < i)
                     {
                         Console.WriteLine(logStreams[j].LogStreamName);
